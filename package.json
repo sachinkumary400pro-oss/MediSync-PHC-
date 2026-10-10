@@ -1,0 +1,16 @@
+{
+  "name": "medisync-phc",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MediSync PHC - combined single application (Express backend serving the built React frontend)",
+  "scripts": {
+    "setup": "npm --prefix frontend install && npm --prefix backend install",
+    "build": "npm --prefix frontend run build",
+    "seed": "npm --prefix backend run seed",
+    "test": "npm --prefix backend test",
+    "prestart": "npm run build",
+    "start": "npm --prefix backend start",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev:backend": "npm --prefix backend run dev"
+  }
+}
